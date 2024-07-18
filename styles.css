@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fDE2ODk0MDQ4OTZ8&ixlib=rb-1.2.1&utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-right: 10px;
+}
+
+input[type="text"]:focus, input[type="datetime-local"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #f9f9f9;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+li button:hover {
+    transform: scale(1.2);
+}
+
+.edit-btn img, .delete-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.task-datetime {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
